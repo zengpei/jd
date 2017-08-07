@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<head>
+	<title>京东页面练习</title>
+	<link rel="stylesheet" style="css/text" href="jd.css">
+	<script >
+	function adaption(doc, win) {
+var docEl = doc.documentElement,
+resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+recalc = function() {
+var clientWidth = docEl.clientWidth;
+if (!clientWidth) return;
+docEl.style.fontSize =( 100*clientWidth / 750) + 'px';
+};
+if (!doc.addEventListener) return;
+win.addEventListener(resizeEvt, recalc, false);
+doc.addEventListener('DOMContentLoaded', recalc, false);
+}
+adaption(document, window)
+</script>
+</head>
+<body>	
+	<div class="head">
+		<div class="left">
+			<div class="icon">
+				<div class="close">
+					<img src="image/icon-close.png">
+				</div>
+			</div>
+			<div class="log">
+				<div class="red">
+					<img src="image/top-jdlogo.png">
+				</div>
+			</div>
+			<div class="font">
+				<div class="top">
+					发现你的品质生活
+				</div>
+				<div class="bottom">
+					花最少的钱过最好的生活
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="font">
+				立即打开
+			</div>
+		</div>
+	</div>
+	<div class="navigation">
+		<div class="index">
+		</div>
+		<div class="right">
+			<img src="image/jd-sprites.png">
+		</div>
+	</div>
+	<div class="headBar">
+		<div class="title">
+			<div class="middle">
+				<div class="top">
+					<img src="image/jd-sprites.png">
+				</div>
+				<div class="font">
+					首页
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<div class="middle">
+				<div class="top">
+					<img src="image/jd-sprites.png">
+				</div>
+				<div class="font">
+					首页
+				</div>
+			</div>
+		</div>
+		<div class="title">
+			<div class="middle">
+				<div class="top">
+					<img src="image/jd-sprites.png">
+				</div>
+				<div class="font">
+					首页
+				</div>
+			</div>
+		</div><div class="title">
+			<div class="middle">
+				<div class="top">
+					<img src="image/jd-sprites.png">
+				</div>
+				<div class="font">
+					首页
+				</div>
+			</div>
+	</div>
+</body>
+
+</html>
