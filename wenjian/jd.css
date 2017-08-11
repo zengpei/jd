@@ -1,0 +1,68 @@
+*{margin:0;}
+*{padding:0;}
+*{font-family:"微软雅黑",Sans-serif;font-size: 100px;}
+body{height: 100%;width: 100%;}
+.head{height: 50PX;width: 100%;position: relative;}
+.clearfix:after{content:".";display: block;height: 0;clear:both;visibility: hidden;}
+.clearfix{zoom:1;}
+.head .left{width: 70%;height: 50px;background-color: #000;float: left;}
+.head .left .icon{margin-left: 2.5%;width: 16px;line-height: 50px;float: left;display: inline-block;font-size: 0;}
+.head .left .icon img{height: auto;width: 100%;vertical-align: middle;}
+.head .left .log{margin-left: 5%;width: 35px;line-height: 50px;float: left;margin-right: 2.5%; display: inline-block;font-size: 0;}
+.head .left .log img{width: 100%;vertical-align: middle;height: auto;}
+.head .left .font{height: 50px;line-height: 50px;float: left;width: 40%;}
+.head .left .font .top{position: absolute;top:-9px;font-size: 14px;color:#fff;}
+.head .left .font .bottom{position: absolute;top:9px;font-size: 12px;color:#999;}
+.head .right{height: 50px;width: 30%;background-color: #cd2525;float: left;}
+.head .right .font{line-height: 50px;font-size: 16px;color: #fff;text-align: center;}
+.navigation{height: 45px;width: 100%;background-color: #efefef;position: relative;}
+.navigation .middle{height: 45px;width: 60%;margin-left: auto;margin-right: auto;}
+.navigation .middle .font{text-align: center;font-size: 16px;color: #252525;line-height: 45px;}
+.navigation .left{height: 15px;width: 15px;border-left: 2px solid grey;border-bottom:2px solid grey;transform:rotate(45deg);position: absolute;top:15px;left: 15px;}
+.navigation .right{right: 15px;height: 20px;width: 20px;position: absolute;top:15px;}
+.navigation .right img{background-size: 100%;width: 20px;height: 20px;display: block;}
+.headBar{height: 55px;width: 100%;background-color: #404042;display: flex;}
+.headBar .title{flex:1;}
+.headBar .title .middle{width: 30px;height: 55px;margin-right: auto;margin-left: auto;}
+.headBar .title .middle .top{height: 30px;margin-top: 10px;width: 30px;}
+.headBar .title .middle .top img{height: 30px;width: 30px;background-size: 100%;display:block;}
+.headBar .title .middle .font{font-size: 12px;line-height:5px;text-align: center;color:#fff;}
+.class{width:100%;height:1rem;position: relative;}
+.class .select{border-bottom:1px solid #adadad;width: 90%;height: 1rem;display: flex;}
+.class .select .pro{flex:1;border-right:1px solid #adadad;height: 0.6rem;margin-top: 0.2rem;}
+.class .select .pro .font{margin-right: 10px;margin-left: 10px;border-bottom: 2px solid red;height: 0.8rem;color: red }
+.class .select .pro .font .style{text-align: center;line-height: 0.8rem;font-size: 0.25rem;}
+.class .select .pro .none{border-bottom: none;color:#000;}
+.class .select .half{border-right: none;flex: 0.5}
+.class .rotate{height: 0.25rem;width: 0.25rem;border-left: 0.03rem solid grey;border-bottom:0.03rem solid grey;transform:rotate(-45deg);position: absolute;top:0.3rem;right:0.2rem;}
+.class .select .pro .font .hidden{height: 0.8rem;overflow: hidden;}
+.clearfix:after{
+
+centent:"";//设置内容为空
+height:0;//高度为0
+
+　　　　　　line-height:0;//行高为0
+
+　　　　　　display:block;//将文本转为块级元素
+
+　　　　　　visibility:hidden;//将元素隐藏
+
+　　　　　　clear:both//清除浮动
+
+　　　　　}
+
+　　　　.clearfix{
+
+　　　　　　zoom:1;为了兼容IE
+
+　　　　}
+.content{margin-top: 0.4rem;width:100%;border-bottom: 1px solid #f3f3f3;height: 4rem;}
+.content .inner{width: 90%;margin-right: auto;margin-left: auto;clear: both;height: 4rem;}
+.content .inner .left{width: 60%;height: 3.8rem;margin-top: 0.2rem;float: left;}
+.content .inner .left .top{height: 1.5rem;width: 100;}
+.content .inner .left .top .font{font-size: 0.5rem;color: #000;-webkit-line-clamp:2;overflow: hidden;text-overflow: ellipsis;-webkit-box-orient:vertical;display: -webkit-box;}
+.content .inner .left .middle{height: 1rem;margin-top: 0.2rem;width: 100%}
+.content .inner .left .middle .font{font-size: 0.3rem;color: #000;-webkit-line-clamp:2;overflow: hidden;text-overflow: ellipsis;-webkit-box-orient:vertical;display: -webkit-box;color:#646464;}
+.content .inner .left .bottom{margin-top: 0.2rem;height: 0.5rem;width: 100%}
+.content .inner .left .bottom .pic{width: 0.3rem;line-height: 0.5rem;display: inline-block;font-size: 0;float: left;}
+.content .inner .left .bottom .pic img{height: auto;vertical-align: middle;width: 100%;border-radius: 50%;}
