@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+<head>
+	<title>study</title>
+	<link rel="stylesheet" style="css/text" href="copy.css">
+	<script >
+	function adaption(doc, win) {
+	var docEl = doc.documentElement,
+	resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+	recalc = function() {
+	var clientWidth = docEl.clientWidth;
+	if (!clientWidth) return;
+	docEl.style.fontSize =( 100*clientWidth / 750) + 'px';
+	};
+	if (!doc.addEventListener) return;
+	win.addEventListener(resizeEvt, recalc, false);
+	doc.addEventListener('DOMContentLoaded', recalc, false);
+	}
+	adaption(document, window)
+	</script>
+</head>
+<body>
+	<div class="download-pannel">
+		<div class="pannel-bg">
+			<div class="download-close">
+				<img src="image/icon-close.png">
+			</div>
+			<div class="download-logo">
+				<img src="image/top-jdlogo.png">
+			</div>
+			<div class="download-txt">
+				<div class="download-content">
+					<div class="content-up">
+						发现你的品质生活
+					</div>
+					<div class="content-down">
+						花最少的钱过最好的生活
+					</div>
+				</div>
+			</div>
+			<div class="download-action">
+				<div class="font-large">
+					立即打开
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="jd-header-bar">
+		<div class="jd-header-icon-back">
+		<span >
+		</span>
+		</div>
+		<div class="jd-header-title">
+			发现频道
+		</div>
+		<div class="jd-header-icon-shortcut">
+			<span></span>
+		</div>
+		<div class="jd-header-shortcut">
+			<li>
+				<span class="shortcut-home">
+				</span>
+				<strong>首页</strong>
+			</li>
+		</div>		
+	</div>
+</body>
+</html>

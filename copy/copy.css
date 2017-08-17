@@ -1,0 +1,28 @@
+*{padding:0;}
+*{margin:0;}
+*{font-family: "微软雅黑",Sans-serif}
+body{height: 100%;width: 100%;}
+.download-pannel{height: 50px;width: 100%;background-color: #232326;line-height: 50px;position: relative;font-size: 0;overflow: hidden;display: block;}
+.download-pannel .pannel-bg{height: 100%;width: 100%;top:0;position: absolute;left: 0;z-index: 4;}
+.download-pannel .pannel-bg img{width: 100%;height: 100%;vertical-align: middle;}
+.download-pannel .pannel-bg .download-close{width: 16px;height: 50px;line-height: 50px;display: inline-block;margin-left: 2.5%;}
+.download-pannel .pannel-bg .download-close img{height: auto;width: 100%;vertical-align: middle;}
+.download-pannel .pannel-bg .download-logo{width: 35px;height: 50px;line-height: 50px;display: inline-block;margin-right: 2.5%;margin-left: 5%;}
+.download-pannel .pannel-bg .download-logo img{height: auto;width: 100%;vertical-align: middle;}
+.download-pannel .pannel-bg .download-txt{height: 100%;width: 40%;display: inline-block;vertical-align: middle;}
+.download-pannel .pannel-bg .download-txt .download-content{font-size: 12px;display: block;position: relative;}
+.download-pannel .pannel-bg .download-txt .download-content .content-up{color:#fff;font-weight: 500;margin-top:-9px;position: absolute;}
+.download-pannel .pannel-bg .download-txt .download-content .content-down{color:#999;position: absolute;top:9px;position: absolute;}
+.download-pannel .pannel-bg .download-action{height: 100%;width: 33%;background-color: #cd2525;display: inline-block;text-align: center;float: right;color:#fff; }
+.download-pannel .pannel-bg .download-action .font-large{font-size: 15px;}
+.jd-header-bar{position: relative;background-color: #efefef;background-size: 100% 44px;border-bottom: 1px solid #bfbfbf;border-width: 0 0 1px 0;min-height:44px;width: 100%;}
+.jd-header-bar .jd-header-icon-back{position: absolute;width:40px;height: 44px;}
+.jd-header-bar .jd-header-icon-back span{width: 20px;height: 20px;background-position: -20px 0;margin: 12px 0 0 10px;display: block;background-image: url(image/jd-sprites.png);background-size: 200px 200px;}
+.jd-header-bar .jd-header-title{text-align: center;height: 44px;line-height: 44px;font-size: 16px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.jd-header-bar .jd-header-icon-shortcut{position: absolute;width: 44px;height: 44px;overflow: hidden;top:0;right: 0;}
+.jd-header-bar .jd-header-icon-shortcut span{width: 20px;height: 20px;background-position: -60px 0;margin: 12px 10px 0 10px;display: block;background-image: url(image/jd-sprites.png);background-size: 200px 200px;}
+.jd-header-shortcut{display: table;width: 100%;height: 57px;background-color: #404042;}
+.jd-header-shortcut li{width: 25%;text-align: center;list-style: none;}
+.jd-header-shortcut li .shortcut-home{background-position: -30px -27px;}
+.jd-header-shortcut span{height: 30px;width: 30px;margin-top:6px;display: block;margin: 0 auto;color:#fff;font-weight: normal;font-size: 12px;background-image: url(image/jd-sprites.png);background-size: 200px 200px;}
+.jd-header-shortcut strong{display: block;margin: 0 auto;color:#fff;font-weight: normal;font-size: 12px;}
