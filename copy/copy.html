@@ -19,6 +19,23 @@
 	doc.addEventListener('DOMContentLoaded', recalc, false);
 	}
 	adaption(document, window)
+	
+	<script type="text/javascript">
+    //获取触发点dom对象
+    var toggle = document.querySelector('#toggle')
+    //获取要隐藏和显示的dom对象
+    var extension = document.querySelector('#extension')
+    //添加click事件监听器
+    toggle.addEventListener('click', function() {
+        //toggle元素被点击后，执行这个方法
+        
+        if(extension.style.display=='none'){
+        	extension.style.display=''
+        }else{
+        	extension.style.display='none'
+        }
+
+    })
 	</script>
 </head>
 <body>
@@ -58,13 +75,215 @@
 		<div class="jd-header-icon-shortcut">
 			<span></span>
 		</div>
-		<div class="jd-header-shortcut">
+		<ul class="jd-header-shortcut">
 			<li>
 				<span class="shortcut-home">
 				</span>
 				<strong>首页</strong>
 			</li>
-		</div>		
+			<li>
+				<span class="shortcut-home shoutcut-categories">
+				</span>
+				<strong>分类搜索</strong>
+			</li>
+			<li>
+				<span class="shortcut-home shoutcut-cart">
+				</span>
+				<strong>购物车</strong>
+			</li>
+			<div class="current">
+			<li>
+				<span class="shortcut-home shoutcut-my-account">
+				</span>
+				<strong>我的京东</strong>
+			</li>
+			</div>
+		</ul>		
+	</div>
+	<div class="clearfix">
+		<div class="slide-navi-container">
+			<div class="slide-navi">
+				<div class="navi">
+					<div class="navi-name">
+						<div class="font">
+							精选
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-navi">
+				<div class="navi">
+					<div class="navi-name navi-bottom">
+						<div class="font color">
+							精选
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-navi">
+				<div class="navi">
+					<div class="navi-name navi-bottom">
+						<div class="font color">
+							精选
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-navi">
+				<div class="navi">
+					<div class="navi-name navi-bottom">
+						<div class="font color">
+							精选
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide-navi part">
+				<div class="navi right">
+					<div class="navi-name navi-bottom">
+						<div class="font color">
+							精选
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="down-navi-arrow">
+			<div class="arrow">
+			</div>
+		</div>
+		<div class="artical">
+			<div class="artical-left">
+				<p class="artical-title">
+					国外传疯了的iPhone 8真机操作视频，先睹为快！！
+				</p>
+				<p class="artical-summary">
+					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
+				</p>
+				<div class="artical-author">
+					<img src="image/q65.webp">
+					<div class="artical-author-name">
+						北门
+					</div>
+				</div>
+			</div>
+			<div class="artical-right">
+				<div class="img-box">
+					<img src="image/jpg.webp">
+				</div>
+				<div class="artical-info">
+					<div class="artical-time">
+						<div class="clock">
+						</div>
+						<span>08月23日</span>
+					</div>
+					<div class="artical-viewed">
+						<div class="eye">
+						</div>
+						<span>10000+</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="artical height">
+			<div class="artical-left">
+				<p class="artical-title">
+					国外传疯了的iPhone 8真机操作视频，先睹为快！！
+				</p>
+				<p class="artical-summary">
+					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
+				</p>
+				<div class="artical-author">
+					<img src="image/q65.webp">
+					<div class="artical-author-name">
+						北门
+					</div>
+				</div>
+			</div>
+			<div class="artical-right">
+				<div class="img-box">
+					<img src="image/jpg.webp">
+				</div>
+				<div class="artical-info">
+					<div class="artical-time">
+						<div class="clock">
+						</div>
+						<span>08月23日</span>
+					</div>
+					<div class="artical-viewed">
+						<div class="eye">
+						</div>
+						<span>10000+</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="artical height">
+			<div class="artical-left">
+				<p class="artical-title">
+					国外传疯了的iPhone 8真机操作视频，先睹为快！！
+				</p>
+				<p class="artical-summary">
+					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
+				</p>
+				<div class="artical-author">
+					<img src="image/q65.webp">
+					<div class="artical-author-name">
+						北门
+					</div>
+				</div>
+			</div>
+			<div class="artical-right">
+				<div class="img-box">
+					<img src="image/jpg.webp">
+				</div>
+				<div class="artical-info">
+					<div class="artical-time">
+						<div class="clock">
+						</div>
+						<span>08月23日</span>
+					</div>
+					<div class="artical-viewed">
+						<div class="eye">
+						</div>
+						<span>10000+</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="artical height">
+			<div class="artical-left">
+				<p class="artical-title">
+					国外传疯了的iPhone 8真机操作视频，先睹为快！！
+				</p>
+				<p class="artical-summary">
+					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
+				</p>
+				<div class="artical-author">
+					<img src="image/q65.webp">
+					<div class="artical-author-name">
+						北门
+					</div>
+				</div>
+			</div>
+			<div class="artical-right">
+				<div class="img-box">
+					<img src="image/jpg.webp">
+				</div>
+				<div class="artical-info">
+					<div class="artical-time">
+						<div class="clock">
+						</div>
+						<span>08月23日</span>
+					</div>
+					<div class="artical-viewed">
+						<div class="eye">
+						</div>
+						<span>10000+</span>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

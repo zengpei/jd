@@ -19,7 +19,24 @@ win.addEventListener(resizeEvt, recalc, false);
 doc.addEventListener('DOMContentLoaded', recalc, false);
 }
 adaption(document, window)
-</script>
+
+	<script type="text/javascript">
+    //获取触发点dom对象
+    var toggle = document.querySelector('#toggle')
+    //获取要隐藏和显示的dom对象
+    var extension = document.querySelector('#extension')
+    //添加click事件监听器
+    toggle.addEventListener('click', function() {
+        //toggle元素被点击后，执行这个方法
+        
+        if(extension.style.display=='none'){
+        	extension.style.display=''
+        }else{
+        	extension.style.display='none'
+        }
+
+    })
+	</script>
 </head>
 <body>	
 	<div class="head">
@@ -137,10 +154,10 @@ adaption(document, window)
 				</div>
 			</div>
 			</div>
-		<div class="rotate">
+		<div class="rotate" id="toggle">
 		</div>
 		</div>
-		<div class="extension">
+		<div class="extension" id="toggle">
 			<div class="top">
 				<div class="inner">
 					<div class="style">
