@@ -2,41 +2,43 @@
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
 <head>
 	<title>study</title>
 	<link rel="stylesheet" style="css/text" href="copy.css">
-	<script >
-	function adaption(doc, win) {
-	var docEl = doc.documentElement,
-	resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-	recalc = function() {
-	var clientWidth = docEl.clientWidth;
-	if (!clientWidth) return;
-	docEl.style.fontSize =( 100*clientWidth / 750) + 'px';
-	};
-	if (!doc.addEventListener) return;
-	win.addEventListener(resizeEvt, recalc, false);
-	doc.addEventListener('DOMContentLoaded', recalc, false);
-	}
-	adaption(document, window)
-
+	<script>
+		function adaption(doc, win) {
+			var docEl = doc.documentElement,
+				resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+				recalc = function () {
+					var clientWidth = docEl.clientWidth;
+					if (!clientWidth) return;
+					docEl.style.fontSize = (100 * clientWidth / 750) + 'px';
+				};
+			if (!doc.addEventListener) return;
+			win.addEventListener(resizeEvt, recalc, false);
+			doc.addEventListener('DOMContentLoaded', recalc, false);
+		}
+		adaption(document, window)
 	</script>
 	<script type="text/javascript">
-    //获取触发点dom对象
-    var toggle = document.querySelector('#toggle')
-    //获取要隐藏和显示的dom对象
-    var extension = document.querySelector('#extension')
-    //添加click事件监听器
-    toggle.addEventListener('click', function() {
-        //toggle元素被点击后，执行这个方法
-        
-        if(extension.style.display=='none'){
-        	extension.style.display=''
-        }else{
-        	extension.style.display='none'
-        }
+		//获取触发点dom对象
+		var toggle = document.querySelector('#toggle')
+		//获取要隐藏和显示的dom对象
+		var extension = document.querySelector('#extension')
+		//添加click事件监听器
+		toggle.addEventListener('click', function () {
+			//toggle元素被点击后，执行这个方法
+
+			if (extension.style.display == 'none') {
+				extension.style.display = ''
+			} else {
+				extension.style.display = 'none'
+			}
+		})
 	</script>
 </head>
+
 <body>
 	<div class="download-pannel">
 		<div class="pannel-bg">
@@ -65,7 +67,7 @@
 	</div>
 	<div class="jd-header-bar">
 		<div class="jd-header-icon-back">
-		<span >
+			<span>
 		</span>
 		</div>
 		<div class="jd-header-title">
@@ -91,13 +93,13 @@
 				<strong>购物车</strong>
 			</li>
 			<div class="current">
-			<li>
-				<span class="shortcut-home shoutcut-my-account">
+				<li>
+					<span class="shortcut-home shoutcut-my-account">
 				</span>
-				<strong>我的京东</strong>
-			</li>
+					<strong>我的京东</strong>
+				</li>
 			</div>
-		</ul>		
+		</ul>
 	</div>
 	<div class="clearfix">
 		<div class="select">
@@ -147,47 +149,47 @@
 						</div>
 					</div>
 				</div>
-				</div>
-				<div class="down-navi-arrow">
-					<div class="arrow">
-					</div>
+			</div>
+			<div class="down-navi-arrow">
+				<div class="arrow">
 				</div>
 			</div>
+		</div>
 		<div class="transition">
 			<div class="navi-active">
 				<div class="navi-name">
 					<div class="inner">
 						<div class="name">
 							精选
-						</div>	
+						</div>
 					</div>
 				</div>
 				<div class="navi-name">
 					<div class="inner">
 						<div class="name">
 							精选
-						</div>	
+						</div>
 					</div>
 				</div>
 				<div class="navi-name">
 					<div class="inner">
 						<div class="name">
 							精选
-						</div>	
+						</div>
 					</div>
 				</div>
 				<div class="navi-name">
 					<div class="inner">
 						<div class="name">
 							精选
-						</div>	
+						</div>
 					</div>
 				</div>
 				<div class="navi-name">
 					<div class="inner">
 						<div class="name">
 							精选
-						</div>	
+						</div>
 					</div>
 				</div>
 			</div>
@@ -196,125 +198,139 @@
 					<div class="inner">
 						<div class="name">
 							精选
-						</div>	
+						</div>
 					</div>
 				</div>
 				<div class="navi-name">
 					<div class="inner">
 						<div class="name">
 							精选
-						</div>	
+						</div>
 					</div>
 				</div>
 				<div class="navi-name">
-					
+
 				</div>
-				<div class="navi-name">					
+				<div class="navi-name">
 				</div>
-				<div class="navi-name">					
+				<div class="navi-name">
 				</div>
 			</div>
 		</div>
-			<div class="artical">
-				<div class="artical-left">
-					<div class="artical-title">
+		<div class="artical">
+			<div class="artical-left">
+				<div class="artical-title">
 					国外传疯了的iPhone 8真机操作视频，先睹为快！！
-					</div>
-					<div class="artical-summary">
-					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
-					</div>
-					<div class="artical-author clearfix">
-						<img src="image/q65.webp">
-						<div class="artical-author-name">
-						北门
-					</div>
-					</div>
 				</div>
-				<div class="artical-right">
-					<div class="img-box">
-						<img src="image/jpg.webp">
-					</div>
-					<div class="artical-info">
-						<div class="artical-time">
-							<div class="clock">
-							</div>
-							<span>2017年8月28日</span>
-						</div>
-						<div class="artical-viewed">
-							<div class="eye">
-							</div>
-							<span>9000+</span>
-						</div>
+				<div class="artical-summary">
+					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
+				</div>
+				<div class="artical-author clearfix">
+					<img src="image/q65.webp">
+					<div class="artical-author-name">
+						北门
 					</div>
 				</div>
 			</div>
-			<div class="artical">
-				<div class="artical-left">
-					<div class="artical-title">
-					国外传疯了的iPhone 8真机操作视频，先睹为快！！
-					</div>
-					<div class="artical-summary">
-					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
-					</div>
-					<div class="artical-author clearfix">
-						<img src="image/q65.webp">
-						<div class="artical-author-name">
-						北门
-					</div>
-					</div>
+			<div class="artical-right">
+				<div class="img-box">
+					<img src="image/jpg.webp">
 				</div>
-				<div class="artical-right">
-					<div class="img-box">
-						<img src="image/jpg.webp">
+				<div class="artical-info">
+					<div class="artical-time">
+						<div class="clock">
+						</div>
+						<span>2017年8月28日</span>
 					</div>
-					<div class="artical-info">
-						<div class="artical-time">
-							<div class="clock">
-							</div>
-							<span>2017年8月28日</span>
+					<div class="artical-viewed">
+						<div class="eye">
 						</div>
-						<div class="artical-viewed">
-							<div class="eye">
-							</div>
-							<span>9000+</span>
-						</div>
+						<span>9000+</span>
 					</div>
 				</div>
 			</div>
-			<div class="artical">
-				<div class="artical-left">
-					<div class="artical-title">
+		</div>
+		<div class="artical">
+			<div class="artical-left">
+				<div class="artical-title">
 					国外传疯了的iPhone 8真机操作视频，先睹为快！！
-					</div>
-					<div class="artical-summary">
+				</div>
+				<div class="artical-summary">
 					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
-					</div>
-					<div class="artical-author clearfix">
-						<img src="image/q65.webp">
-						<div class="artical-author-name">
+				</div>
+				<div class="artical-author clearfix">
+					<img src="image/q65.webp">
+					<div class="artical-author-name">
 						北门
 					</div>
+				</div>
+			</div>
+			<div class="artical-right">
+				<div class="img-box">
+					<img src="image/jpg.webp">
+				</div>
+				<div class="artical-info">
+					<div class="artical-time">
+						<div class="clock">
+						</div>
+						<span>2017年8月28日</span>
+					</div>
+					<div class="artical-viewed">
+						<div class="eye">
+						</div>
+						<span>9000+</span>
 					</div>
 				</div>
-				<div class="artical-right">
-					<div class="img-box">
-						<img src="image/jpg.webp">
+			</div>
+		</div>
+		<div class="artical">
+			<div class="artical-left">
+				<div class="artical-title">
+					国外传疯了的iPhone 8真机操作视频，先睹为快！！
+				</div>
+				<div class="artical-summary">
+					iPhone 8 的信息一直就没有断过，之前一直是图片曝光，但这一次的视频曝光，涵盖的信息更加的丰富，大家一起来关注一下。不过这个曝光还没有得到官方的承认，最终还是要看苹果的发布会是怎样的展现。
+				</div>
+				<div class="artical-author clearfix">
+					<img src="image/q65.webp">
+					<div class="artical-author-name">
+						北门
 					</div>
-					<div class="artical-info">
-						<div class="artical-time">
-							<div class="clock">
-							</div>
-							<span>2017年8月28日</span>
+				</div>
+			</div>
+			<div class="artical-right">
+				<div class="img-box">
+					<img src="image/jpg.webp">
+				</div>
+				<div class="artical-info">
+					<div class="artical-time">
+						<div class="clock">
 						</div>
-						<div class="artical-viewed">
-							<div class="eye">
-							</div>
-							<span>9000+</span>
+						<span>2017年8月28日</span>
+					</div>
+					<div class="artical-viewed">
+						<div class="eye">
 						</div>
+						<span>9000+</span>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	</div>
+	<script>
+		var arrowDiv = document.querySelector('.down-navi-arrow .arrow')
+		var transitDiv=document.querySelector('.transition')
+		arrowDiv.addEventListener('click', function () {
+			if (this.classList.contains('arrow-up')) {
+				this.classList.remove('arrow-up')
+				transitDiv.classList.add('is-show')
+			} else {
+				this.classList.add('arrow-up')
+				transitDiv.classList.remove('is-show')
+			}
+		})
+	</script>
 </body>
+
 </html>
